@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Espaço</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>João Vitor Roventini | Desenvolvedor Full Stack</title>
+<meta name="description" content="Portfólio de João Vitor Roventini, estudante de Engenharia de Software na PUC-Campinas. Desenvolvimento full stack, projetos com IA e oportunidades de estágio.">
+<meta name="theme-color" content="#101113">
+<meta property="og:title" content="João Vitor Roventini | Desenvolvedor Full Stack">
+<meta property="og:description" content="Desenvolvimento web, projetos com inteligência artificial e uma trajetória em Engenharia de Software. Disponível para oportunidades de estágio.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://jvrov.github.io/site/">
+<meta property="og:image" content="https://jvrov.github.io/site/assets/og-image.png">
+<meta property="og:image:alt" content="João Vitor Roventini — Desenvolvimento Full Stack e Inteligência Artificial">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://jvrov.github.io/site/">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-            </ul>
-        </nav>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="portfolio-container header-inner">
+        <a href="#home" class="brand" aria-label="João Vitor Roventini, início">jv<span class="brand-dot">.</span><span class="brand-caption">Portfólio de software</span></a>
+        <nav aria-label="Navegação principal" class="desktop-nav"><a href="#home" class="nav-link" data-active="true" aria-current="location">Início</a><a href="#about" class="nav-link">Sobre</a><a href="#skills" class="nav-link">Tecnologias</a><a href="#projects" class="nav-link">Projetos</a><a href="#experience" class="nav-link">Experiência</a><a href="#education" class="nav-link">Formação</a><a href="#contact" class="nav-link">Contato</a></nav>
+        <button type="button" class="button button-icon mobile-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-navigation"><span class="menu-symbol" aria-hidden="true">☰</span></button>
+      </div>
+      <nav id="mobile-navigation" aria-label="Navegação móvel" class="mobile-nav" hidden><a href="#home" class="nav-link" data-active="true" aria-current="location">Início</a><a href="#about" class="nav-link">Sobre</a><a href="#skills" class="nav-link">Tecnologias</a><a href="#projects" class="nav-link">Projetos</a><a href="#experience" class="nav-link">Experiência</a><a href="#education" class="nav-link">Formação</a><a href="#contact" class="nav-link">Contato</a></nav>
     </header>
-
-    <main>
-        <h1>Bem-vindo ao Meu Site</h1>
-        <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras. Explore meus projetos e habilidades!</p>
-
-        <section id="projects">
-            <h2>Meus Projetos</h2>
-            <p>Aqui está um dos projetos que estou trabalhando por agora:</p>
-            <a href="https://github.com/jvrov/PROJETO2" target="_blank" class="btn">PROJETO</a>
-        </section>
-
-        <section id="skills">
-            <h2>Linguagens que estou estudando</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Flask</li>
-            </ul>
-        </section>
-
-       
-
-        
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Meu Site</p>
-        <div>
-            <a href="https://github.com/jvrov" target="_blank"><i class="fa fa-github"></i> GitHub</a> |
-            <a href="https://www.linkedin.com/in/joão-vitor-roventini-61660822a/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    <main id="main">
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <img src="assets/sculpture.svg" alt="" class="hero-art" width="1536" height="1024" fetchPriority="high" />
+        <div class="portfolio-container hero-inner">
+          <div class="eyebrow">Curiosidade para aprender. Vontade de construir.</div>
+          <h1 id="hero-title" class="hero-heading"><span>João Vitor</span><span class="surname">Roventini.</span></h1>
+          <p class="hero-subtitle">Estudante de Engenharia de Software &amp; Desenvolvedor Full Stack</p>
+          <p class="hero-description">Transformo curiosidade em código. Desenvolvo minha base em engenharia de software com projetos práticos, aplicações web e inteligência artificial.</p>
+          <div class="mt-5 availability"><span class="status-dot" ></span>Disponível para oportunidades de estágio</div>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">Ver projetos<span class="icon" aria-hidden="true">↗</span></a>
+            <a href="https://github.com/jvrov" target="_blank" rel="noopener noreferrer" class="button button-outline"><span class="icon" aria-hidden="true">⌘</span>GitHub<span class="icon" aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/joão-vitor-roventini-61660822a/" target="_blank" rel="noopener noreferrer" class="button button-outline"><span class="icon" aria-hidden="true">in</span>LinkedIn<span class="icon" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-bottom">
+            <a href="#about" class="scroll-cue"><span class="icon" aria-hidden="true">↓</span>Explore o portfólio</a>
+            <div class="terminal" aria-label="Perfil do desenvolvedor">
+              <div class="terminal-header"><div class="terminal-dots"><span ></span><span ></span><span ></span></div><span>~/joao-vitor/profile</span><span class="icon" aria-hidden="true">›_</span></div>
+              <div><span class="terminal-prompt">$ </span>whoami</div>
+              <div><span class="terminal-key">atuação</span><span> → </span><span class="terminal-value">desenvolvedor full stack</span></div>
+              <div><span class="terminal-key">formação</span><span> → </span><span>PUC-Campinas · 2027</span></div>
+              <div><span class="terminal-key">momento</span><span> → </span><span class="terminal-prompt">pronto para aprender e contribuir</span></div>
+            </div>
+          </div>
         </div>
-    </footer>
+      </section>
+      <section id="about" class="section" aria-labelledby="about-heading"><div class="portfolio-container reveal">
+        <div class="section-heading"><span class="section-number">01 /</span><h2 id="about-heading">Um pouco sobre mim</h2><span class="section-caption">QUEM ESTÁ POR TRÁS DO CÓDIGO</span></div>
+        <div class="about-grid">
+          <div><h3 class="about-lead">Um olhar de engenharia.<br>Curiosidade pelo próximo desafio.</h3><div class="prose"><p>Sou João Vitor, <strong>estudante de Engenharia de Software na PUC-Campinas</strong>. Tenho interesse em desenvolvimento full stack e em conectar interfaces, lógica e dados para construir aplicações úteis.</p><p>Atualmente curso Engenharia de Software na PUC-Campinas e desenvolvo projetos acadêmicos e pessoais, incluindo análise de documentos com inteligência artificial. Busco uma oportunidade para crescer, colaborar e contribuir com uma equipe.</p></div></div>
+          <div class="profile-facts"><div><span class="fact-label">Foco</span><span class="fact-value">Desenvolvimento full stack</span></div><div><span class="fact-label">Formação</span><span class="fact-value">PUC-Campinas</span></div><div><span class="fact-label">Conclusão</span><span class="fact-value">Prevista para 2027</span></div><div><span class="fact-label">Próximo passo</span><span class="fact-value text-primary">Uma oportunidade de estágio</span></div></div>
+        </div>
+      </div></section>
+      <section id="skills" class="section" aria-labelledby="skills-heading"><div class="portfolio-container reveal">
+        <div class="section-heading"><span class="section-number">02 /</span><h2 id="skills-heading">Tecnologias</h2><span class="section-caption">FERRAMENTAS DA MINHA TRAJETÓRIA</span></div>
+        <div class="skills-grid"><article class="tech-card"><div class="tech-symbol" aria-hidden="true">Jv</div><h3 class="tech-name">Java</h3><p class="tech-category">Linguagem</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">Py</div><h3 class="tech-name">Python</h3><p class="tech-category">Linguagem</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">JS</div><h3 class="tech-name">JavaScript</h3><p class="tech-category">Linguagem</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">⚛</div><h3 class="tech-name">React</h3><p class="tech-category">Front-end</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">⬡</div><h3 class="tech-name">Node.js</h3><p class="tech-category">Back-end</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">SB</div><h3 class="tech-name">Spring Boot</h3><p class="tech-category">Back-end</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">SQL</div><h3 class="tech-name">SQL</h3><p class="tech-category">Banco de dados</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">⑂</div><h3 class="tech-name">Git</h3><p class="tech-category">Versionamento</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">▦</div><h3 class="tech-name">Docker</h3><p class="tech-category">Contêineres</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">&lt;/&gt;</div><h3 class="tech-name">HTML</h3><p class="tech-category">Marcação</p></article><article class="tech-card"><div class="tech-symbol" aria-hidden="true">{ }</div><h3 class="tech-name">CSS</h3><p class="tech-category">Estilos</p></article></div>
+        <div class="learning"><span class="icon" aria-hidden="true">▤</span><div><h3>Aprendendo atualmente</h3><p>Aprofundando minha base em desenvolvimento full stack e explorando integração de IA, processamento de documentos e visualização de dados por meio de projetos práticos.</p></div></div>
+      </div></section>
+      <section id="projects" class="section" aria-labelledby="projects-heading"><div class="portfolio-container reveal">
+        <div class="section-heading"><span class="section-number">03 /</span><h2 id="projects-heading">Projetos em destaque</h2><span class="section-caption">APRENDER, EXPERIMENTAR, CONSTRUIR</span></div>
+        <article class="project-card featured-project">
+<div class="project-visual ai-visual"><div class="ai-flow"><span class="project-label">PROCESSAMENTO DE DOCUMENTOS COM IA</span><div class="flow-nodes" aria-hidden="true"><span>PDF</span><b>→</b><span>IA</span><b>→</b><span>Dados</span></div><div class="document-preview" aria-hidden="true"><div class="document-bar"></div><div class="document-bar short"></div><div class="document-bar"></div><div class="document-bar medium"></div><div class="analysis-label">Extração · Análise · Visualização</div></div><p class="illustration-note">Visualização ilustrativa do fluxo</p></div></div>
+<div class="project-content"><span class="project-label">PROJETO EM DESTAQUE / INTELIGÊNCIA ARTIFICIAL</span><h3>rh-auto<span class="project-subtitle">Industrial Deal Intelligence</span></h3><p>Aplicação em Python que extrai informações de contratos em PDF, utiliza IA para identificar riscos e apresenta a análise em um dashboard interativo.</p><ul class="project-features"><li>Extração de texto de documentos PDF</li><li>Análise de riscos e cláusulas com a API da OpenAI</li><li>Visualização de riscos, histórico e comparação de contratos</li></ul><ul class="project-tags"><li>Python</li><li>Dash</li><li>OpenAI API</li><li>Plotly</li><li>pdfplumber</li></ul><a class="button button-outline" href="https://github.com/jvrov/rh-auto" target="_blank" rel="noopener noreferrer">Ver repositório <span aria-hidden="true">↗</span></a></div></article>
+
+      </div></section>
+      <section id="experience" class="section" aria-labelledby="experience-heading"><div class="portfolio-container reveal">
+        <div class="section-heading"><span class="section-number">04 /</span><h2 id="experience-heading">Experiência</h2><span class="section-caption">CONSTRUINDO MINHA TRAJETÓRIA</span></div>
+        <div class="experience-layout"><div><div class="availability"><span class="status-dot" ></span>Em busca da primeira oportunidade profissional</div><h3 class="experience-title">Pronto para o próximo passo.<br>Com vontade de aprender e contribuir.</h3></div><div><div class="prose"><p>Minha experiência vem de trabalhos acadêmicos e projetos pessoais. No rh-auto, exploro a integração de IA com processamento de PDFs e dashboards. Busco aplicar esse aprendizado em uma oportunidade de estágio ou desenvolvimento júnior.</p></div><div class="experience-points"><div class="experience-point"><span class="icon" aria-hidden="true">✓</span>Aprendizado com projetos acadêmicos e pessoais</div><div class="experience-point"><span class="icon" aria-hidden="true">✓</span>Desenvolvimento de aplicações web e projetos com IA</div><div class="experience-point"><span class="icon" aria-hidden="true">✓</span>Abertura a feedback, colaboração e novos desafios</div></div></div></div>
+      </div></section>
+      <section id="education" class="section" aria-labelledby="education-heading"><div class="portfolio-container reveal">
+        <div class="section-heading"><span class="section-number">05 /</span><h2 id="education-heading">Formação</h2><span class="section-caption">FORMAÇÃO E FUNDAMENTOS</span></div>
+        <div class="education-row"><div class="education-icon"><span class="icon" aria-hidden="true">◇</span></div><div><h3>Engenharia de Software</h3><p>PUC-Campinas</p></div><span class="education-date">Conclusão prevista · 2027</span></div>
+        <div class="education-row"><div class="education-icon"><span class="icon" aria-hidden="true">▤</span></div><div><h3>Linux</h3><p>Curso realizado na PUC-Campinas.</p></div><span class="education-date">Curso complementar</span></div>
+        <div class="education-row"><div class="education-icon"><span class="icon" aria-hidden="true">▤</span></div><div><h3>Excel Avançado</h3><p>Curso realizado na PUC-Campinas.</p></div><span class="education-date">Curso complementar</span></div>
+        <div class="education-row"><div class="education-icon"><span class="icon" aria-hidden="true">▤</span></div><div><h3>Cibersegurança</h3><p>Curso realizado na PUC-Campinas.</p></div><span class="education-date">Curso complementar</span></div>
+      </div></section>
+      <section id="contact" class="section contact-section" aria-labelledby="contact-heading"><div class="portfolio-container reveal">
+        <div class="section-heading"><span class="section-number">06 /</span><h2 id="contact-heading">Vamos conversar</h2><span class="section-caption">O PRÓXIMO PASSO COMEÇA COM UMA CONVERSA</span></div>
+        <div class="contact-layout"><div><h3 class="contact-title">Uma nova oportunidade.<br><span>Uma conversa de distância.</span></h3><p class="contact-copy">Sua equipe procura um desenvolvedor com vontade de aprender? Vamos conversar sobre oportunidades de estágio ou desenvolvimento júnior e como posso contribuir.</p><div class="availability mt-6"><span class="status-dot" ></span>Disponível para oportunidades de estágio</div></div><div class="contact-actions"><a href="https://www.linkedin.com/in/joão-vitor-roventini-61660822a/" target="_blank" rel="noopener noreferrer" class="button button-primary"><span class="icon" aria-hidden="true">in</span>Conversar no LinkedIn<span class="icon" aria-hidden="true">↗</span></a><a href="https://github.com/jvrov" target="_blank" rel="noopener noreferrer" class="button button-outline"><span class="icon" aria-hidden="true">⌘</span>Conhecer meu GitHub<span class="icon" aria-hidden="true">↗</span></a></div></div>
+      </div></section>
+    </main>
+    <footer class="footer"><div class="portfolio-container footer-inner"><span class="footer-name">João Vitor Roventini<span class="text-primary">.</span></span><span>Curiosidade → Código → Evolução</span><div class="footer-links"><a href="https://github.com/jvrov" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/joão-vitor-roventini-61660822a/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></footer>
+    <a href="#home" aria-label="Voltar ao topo" title="Voltar ao topo" class="button button-outline back-top"><span class="icon" aria-hidden="true">↑</span></a>
 </body>
 </html>
